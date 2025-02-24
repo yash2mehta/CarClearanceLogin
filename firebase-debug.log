@@ -1,0 +1,84 @@
+[debug] [2025-02-23T20:04:26.776Z] ----------------------------------------------------------------------
+[debug] [2025-02-23T20:04:26.778Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2025-02-23T20:04:26.778Z] CLI Version:   13.31.2
+[debug] [2025-02-23T20:04:26.778Z] Platform:      win32
+[debug] [2025-02-23T20:04:26.778Z] Node Version:  v23.7.0
+[debug] [2025-02-23T20:04:26.778Z] Time:          Mon Feb 24 2025 04:04:26 GMT+0800 (Singapore Standard Time)
+[debug] [2025-02-23T20:04:26.779Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-23T20:04:26.780Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-02-23T20:04:26.915Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-23T20:04:26.916Z] > authorizing via signed-in user (yash2.mehta@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\user\Documents\Projectss\New Car Clearance\CarClearanceApp
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2025-02-23T20:04:27.357Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-02-23T20:04:27.357Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-02-23T20:04:37.603Z] Using project from CLI flag: carclearanceapp
+[debug] [2025-02-23T20:04:37.604Z] Checked if tokens are valid: false, expires at: 1740093819472
+[debug] [2025-02-23T20:04:37.604Z] Checked if tokens are valid: false, expires at: 1740093819472
+[debug] [2025-02-23T20:04:37.604Z] > refreshing access token with scopes: []
+[debug] [2025-02-23T20:04:37.605Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-02-23T20:04:37.605Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-23T20:04:37.664Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-02-23T20:04:37.665Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-23T20:04:37.676Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/carclearanceapp [none]
+[debug] [2025-02-23T20:04:38.207Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/carclearanceapp 200
+[debug] [2025-02-23T20:04:38.207Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/carclearanceapp {"projectId":"carclearanceapp","projectNumber":"896901715663","displayName":"CarClearanceApp","name":"projects/carclearanceapp","resources":{"hostingSite":"carclearanceapp"},"state":"ACTIVE","etag":"1_aded17a0-c760-40c9-ade0-064142812a62"}
+[info] i  Using project carclearanceapp (CarClearanceApp) 
+[info] 
+=== Functions Setup
+[debug] [2025-02-23T20:04:38.214Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-23T20:04:38.214Z] > authorizing via signed-in user (yash2.mehta@gmail.com)
+[debug] [2025-02-23T20:04:38.214Z] [iam] checking project carclearanceapp for permissions ["firebase.projects.get"]
+[debug] [2025-02-23T20:04:38.214Z] Checked if tokens are valid: true, expires at: 1740344676665
+[debug] [2025-02-23T20:04:38.214Z] Checked if tokens are valid: true, expires at: 1740344676665
+[debug] [2025-02-23T20:04:38.214Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/carclearanceapp:testIamPermissions [none]
+[debug] [2025-02-23T20:04:38.214Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/carclearanceapp:testIamPermissions x-goog-quota-user=projects/carclearanceapp
+[debug] [2025-02-23T20:04:38.214Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/carclearanceapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-23T20:04:39.225Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/carclearanceapp:testIamPermissions 200
+[debug] [2025-02-23T20:04:39.225Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/carclearanceapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-23T20:04:39.226Z] Checked if tokens are valid: true, expires at: 1740344676665
+[debug] [2025-02-23T20:04:39.226Z] Checked if tokens are valid: true, expires at: 1740344676665
+[debug] [2025-02-23T20:04:39.226Z] Checked if tokens are valid: true, expires at: 1740344676665
+[debug] [2025-02-23T20:04:39.226Z] Checked if tokens are valid: true, expires at: 1740344676665
+[debug] [2025-02-23T20:04:39.226Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/carclearanceapp/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-02-23T20:04:39.226Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/carclearanceapp/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/carclearanceapp
+[debug] [2025-02-23T20:04:39.227Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/carclearanceapp/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-02-23T20:04:39.227Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/carclearanceapp/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/carclearanceapp
+[debug] [2025-02-23T20:04:40.597Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/carclearanceapp/services/cloudfunctions.googleapis.com 200
+[debug] [2025-02-23T20:04:40.597Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/carclearanceapp/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-02-23T20:04:40.597Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/carclearanceapp/services/runtimeconfig.googleapis.com 200
+[debug] [2025-02-23T20:04:40.597Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/carclearanceapp/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.

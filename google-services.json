@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "896901715663",
+    "project_id": "carclearanceapp",
+    "storage_bucket": "carclearanceapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896901715663:android:adb22a3f8f78219620c9ba",
+        "android_client_info": {
+          "package_name": "com.CarClearanceApp.CarClearanceApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896901715663-1q6g1630mgtfqmt6565nmju3958gkvli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.CarClearanceApp.CarClearanceApp",
+            "certificate_hash": "b1a31e28c5c52939a536e3b2c401b6522e7147eb"
+          }
+        },
+        {
+          "client_id": "896901715663-ikfave77osfch17fhgcc4okfc9lu63kn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.CarClearanceApp.CarClearanceApp",
+            "certificate_hash": "5ea911fe16413c87365b7dac9944771df1ac806f"
+          }
+        },
+        {
+          "client_id": "896901715663-1fcuc2f70k7mb0qa8o6cqllasnp3f7tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3pytaKPVcpTRn9LwoRc82ILbaAQZoEdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896901715663-1fcuc2f70k7mb0qa8o6cqllasnp3f7tq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "896901715663-fjdmkfjjuhleh8adktu6q7iv4onqi90d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.CarClearanceApp.CarClearanceApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
